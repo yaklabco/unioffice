@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package chartDrawing ;import (_ef "encoding/xml";_f "fmt";_c "github.com/unidoc/unioffice/v2";_ea "github.com/unidoc/unioffice/v2/common/logger";_b "github.com/unidoc/unioffice/v2/schema/soo/dml";_d "strconv";);type CT_GroupShapeNonVisual struct{
+package chartDrawing ;import (_ef "encoding/xml";_f "fmt";_c "github.com/yaklabco/unioffice/v2";_ea "github.com/yaklabco/unioffice/v2/common/logger";_b "github.com/yaklabco/unioffice/v2/schema/soo/dml";_d "strconv";);type CT_GroupShapeNonVisual struct{
 
 // Chart Non Visual Properties
 CNvPr *_b .CT_NonVisualDrawingProps ;

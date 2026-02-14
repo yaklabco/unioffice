@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package zippkg ;import (_a "archive/zip";_dg "bytes";_e "encoding/xml";_ad "fmt";_c "github.com/unidoc/unioffice/v2";_ed "github.com/unidoc/unioffice/v2/common/tempstorage";_gc "github.com/unidoc/unioffice/v2/internal/sort";_f "github.com/unidoc/unioffice/v2/schema/soo/pkg/relationships";
+package zippkg ;import (_a "archive/zip";_dg "bytes";_e "encoding/xml";_ad "fmt";_c "github.com/yaklabco/unioffice/v2";_ed "github.com/yaklabco/unioffice/v2/common/tempstorage";_gc "github.com/yaklabco/unioffice/v2/internal/sort";_f "github.com/yaklabco/unioffice/v2/schema/soo/pkg/relationships";
 _bb "io";_g "path";_be "sort";_eb "strings";_b "time";);
 
 // RelationsPathFor returns the relations path for a given filename.

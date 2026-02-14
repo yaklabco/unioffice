@@ -15,10 +15,10 @@
 // UniDoc End User License Agreement (EULA) that is available at:
 // https://unidoc.io/eula/
 // A trial license code for evaluation can be obtained at https://unidoc.io.
-package spreadsheet ;import (_cc "archive/zip";_gf "bytes";_gb "errors";_ag "fmt";_d "github.com/unidoc/unioffice/v2";_bc "github.com/unidoc/unioffice/v2/chart";_de "github.com/unidoc/unioffice/v2/color";_bfe "github.com/unidoc/unioffice/v2/common";_ef "github.com/unidoc/unioffice/v2/common/logger";
-_gaf "github.com/unidoc/unioffice/v2/common/tempstorage";_fbe "github.com/unidoc/unioffice/v2/internal/formatutils";_bg "github.com/unidoc/unioffice/v2/internal/license";_ab "github.com/unidoc/unioffice/v2/measurement";_da "github.com/unidoc/unioffice/v2/schema/soo/dml";
-_ge "github.com/unidoc/unioffice/v2/schema/soo/dml/chart";_cdg "github.com/unidoc/unioffice/v2/schema/soo/dml/spreadsheetDrawing";_gcc "github.com/unidoc/unioffice/v2/schema/soo/pkg/relationships";_ca "github.com/unidoc/unioffice/v2/schema/soo/sml";_gd "github.com/unidoc/unioffice/v2/spreadsheet/format";
-_bcc "github.com/unidoc/unioffice/v2/spreadsheet/formula";_ed "github.com/unidoc/unioffice/v2/spreadsheet/reference";_ee "github.com/unidoc/unioffice/v2/spreadsheet/update";_ce "github.com/unidoc/unioffice/v2/vmldrawing";_fg "github.com/unidoc/unioffice/v2/zippkg";
+package spreadsheet ;import (_cc "archive/zip";_gf "bytes";_gb "errors";_ag "fmt";_d "github.com/yaklabco/unioffice/v2";_bc "github.com/yaklabco/unioffice/v2/chart";_de "github.com/yaklabco/unioffice/v2/color";_bfe "github.com/yaklabco/unioffice/v2/common";_ef "github.com/yaklabco/unioffice/v2/common/logger";
+_gaf "github.com/yaklabco/unioffice/v2/common/tempstorage";_fbe "github.com/yaklabco/unioffice/v2/internal/formatutils";_bg "github.com/yaklabco/unioffice/v2/internal/license";_ab "github.com/yaklabco/unioffice/v2/measurement";_da "github.com/yaklabco/unioffice/v2/schema/soo/dml";
+_ge "github.com/yaklabco/unioffice/v2/schema/soo/dml/chart";_cdg "github.com/yaklabco/unioffice/v2/schema/soo/dml/spreadsheetDrawing";_gcc "github.com/yaklabco/unioffice/v2/schema/soo/pkg/relationships";_ca "github.com/yaklabco/unioffice/v2/schema/soo/sml";_gd "github.com/yaklabco/unioffice/v2/spreadsheet/format";
+_bcc "github.com/yaklabco/unioffice/v2/spreadsheet/formula";_ed "github.com/yaklabco/unioffice/v2/spreadsheet/reference";_ee "github.com/yaklabco/unioffice/v2/spreadsheet/update";_ce "github.com/yaklabco/unioffice/v2/vmldrawing";_fg "github.com/yaklabco/unioffice/v2/zippkg";
 _gc "image";_f "image/jpeg";_bf "io";_gfb "math";_e "math/big";_c "os";_b "path";_ba "path/filepath";_ga "reflect";_gfg "regexp";_a "sort";_fb "strconv";_dd "strings";_cd "time";);
 
 // ClearBorder clears any border configuration from the cell style.

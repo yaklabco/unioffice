@@ -9,8 +9,8 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package convert ;import (_c "bytes";_a "errors";_bb "github.com/unidoc/unioffice/v2/common";_ba "github.com/unidoc/unioffice/v2/common/logger";_ac "github.com/unidoc/unioffice/v2/common/tempstorage";_df "github.com/unidoc/unioffice/v2/internal/convertutils";
-_fa "github.com/unidoc/unioffice/v2/measurement";_fg "github.com/unidoc/unioffice/v2/presentation";_cf "github.com/unidoc/unioffice/v2/schema/soo/dml";_gd "github.com/unidoc/unioffice/v2/schema/soo/dml/chart";_ab "github.com/unidoc/unioffice/v2/schema/soo/pml";
+package convert ;import (_c "bytes";_a "errors";_bb "github.com/yaklabco/unioffice/v2/common";_ba "github.com/yaklabco/unioffice/v2/common/logger";_ac "github.com/yaklabco/unioffice/v2/common/tempstorage";_df "github.com/yaklabco/unioffice/v2/internal/convertutils";
+_fa "github.com/yaklabco/unioffice/v2/measurement";_fg "github.com/yaklabco/unioffice/v2/presentation";_cf "github.com/yaklabco/unioffice/v2/schema/soo/dml";_gd "github.com/yaklabco/unioffice/v2/schema/soo/dml/chart";_ab "github.com/yaklabco/unioffice/v2/schema/soo/pml";
 _ae "github.com/unidoc/unipdf/v4/contentstream/draw";_fac "github.com/unidoc/unipdf/v4/core";_ag "github.com/unidoc/unipdf/v4/creator";_ed "github.com/unidoc/unipdf/v4/model";_dc "github.com/unidoc/unipdf/v4/render";_f "image";_e "image/color";_b "image/draw";
 _fd "math";_ef "strconv";_g "strings";);func _fgefd (_dafa ,_ffecc *_cf .CT_TableStyleTextStyle )*_cf .CT_TableStyleTextStyle {_gccf :=_cf .NewCT_TableStyleTextStyle ();if _dafa !=nil {*_gccf =*_dafa ;};if _ffecc ==nil {return _gccf ;};if _gccf .BAttr ==_cf .ST_OnOffStyleTypeUnset {_gccf .BAttr =_ffecc .BAttr ;
 };if _gccf .IAttr ==_cf .ST_OnOffStyleTypeUnset {_gccf .IAttr =_ffecc .IAttr ;};if _gccf .ThemeableFontStylesChoice .Font ==nil {_gccf .ThemeableFontStylesChoice .Font =_ffecc .ThemeableFontStylesChoice .Font ;};if _gccf .ThemeableFontStylesChoice .FontRef ==nil {_gccf .ThemeableFontStylesChoice .FontRef =_ffecc .ThemeableFontStylesChoice .FontRef ;

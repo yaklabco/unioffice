@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package content_types ;import (_d "encoding/xml";_eb "fmt";_f "github.com/unidoc/unioffice/v2";_a "github.com/unidoc/unioffice/v2/common/logger";_b "regexp";);type CT_Override struct{ContentTypeAttr string ;PartNameAttr string ;};func (_df *Override )UnmarshalXML (d *_d .Decoder ,start _d .StartElement )error {_df .CT_Override =*NewCT_Override ();
+package content_types ;import (_d "encoding/xml";_eb "fmt";_f "github.com/yaklabco/unioffice/v2";_a "github.com/yaklabco/unioffice/v2/common/logger";_b "regexp";);type CT_Override struct{ContentTypeAttr string ;PartNameAttr string ;};func (_df *Override )UnmarshalXML (d *_d .Decoder ,start _d .StartElement )error {_df .CT_Override =*NewCT_Override ();
 for _ ,_eeeb :=range start .Attr {if _eeeb .Name .Local =="C\u006f\u006e\u0074\u0065\u006e\u0074\u0054\u0079\u0070\u0065"{_bcf :=_eeeb .Value ;_df .ContentTypeAttr =_bcf ;continue ;};if _eeeb .Name .Local =="\u0050\u0061\u0072\u0074\u004e\u0061\u006d\u0065"{_eag :=_eeeb .Value ;
 _df .PartNameAttr =_eag ;continue ;};};for {_fc ,_gbd :=d .Token ();if _gbd !=nil {return _eb .Errorf ("p\u0061r\u0073\u0069\u006e\u0067\u0020\u004f\u0076\u0065r\u0072\u0069\u0064\u0065: \u0025\u0073",_gbd );};if _bg ,_dfc :=_fc .(_d .EndElement );_dfc &&_bg .Name ==start .Name {break ;
 };};return nil ;};func NewDefault ()*Default {_adc :=&Default {};_adc .CT_Default =*NewCT_Default ();return _adc };

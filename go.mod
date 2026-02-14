@@ -1,4 +1,4 @@
-module github.com/unidoc/unioffice/v2
+module github.com/yaklabco/unioffice/v2
 
 go 1.23.0
 

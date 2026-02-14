@@ -9,9 +9,9 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package presentation ;import (_d "archive/zip";_df "bytes";_gbc "encoding/xml";_ggc "errors";_ed "fmt";_gd "github.com/unidoc/unioffice/v2";_ge "github.com/unidoc/unioffice/v2/common";_gg "github.com/unidoc/unioffice/v2/common/logger";_cc "github.com/unidoc/unioffice/v2/common/tempstorage";
-_fb "github.com/unidoc/unioffice/v2/drawing";_ae "github.com/unidoc/unioffice/v2/internal/formatutils";_e "github.com/unidoc/unioffice/v2/internal/license";_f "github.com/unidoc/unioffice/v2/measurement";_ee "github.com/unidoc/unioffice/v2/schema/soo/dml";
-_g "github.com/unidoc/unioffice/v2/schema/soo/dml/chart";_bb "github.com/unidoc/unioffice/v2/schema/soo/ofc/sharedTypes";_b "github.com/unidoc/unioffice/v2/schema/soo/pkg/relationships";_cf "github.com/unidoc/unioffice/v2/schema/soo/pml";_gb "github.com/unidoc/unioffice/v2/zippkg";
+package presentation ;import (_d "archive/zip";_df "bytes";_gbc "encoding/xml";_ggc "errors";_ed "fmt";_gd "github.com/yaklabco/unioffice/v2";_ge "github.com/yaklabco/unioffice/v2/common";_gg "github.com/yaklabco/unioffice/v2/common/logger";_cc "github.com/yaklabco/unioffice/v2/common/tempstorage";
+_fb "github.com/yaklabco/unioffice/v2/drawing";_ae "github.com/yaklabco/unioffice/v2/internal/formatutils";_e "github.com/yaklabco/unioffice/v2/internal/license";_f "github.com/yaklabco/unioffice/v2/measurement";_ee "github.com/yaklabco/unioffice/v2/schema/soo/dml";
+_g "github.com/yaklabco/unioffice/v2/schema/soo/dml/chart";_bb "github.com/yaklabco/unioffice/v2/schema/soo/ofc/sharedTypes";_b "github.com/yaklabco/unioffice/v2/schema/soo/pkg/relationships";_cf "github.com/yaklabco/unioffice/v2/schema/soo/pml";_gb "github.com/yaklabco/unioffice/v2/zippkg";
 _eb "image";_ef "image/jpeg";_ccf "io";_bf "math";_cd "os";_be "path";_ca "sort";_c "strconv";_ab "strings";);
 
 // Properties returns the properties of the TextBox.

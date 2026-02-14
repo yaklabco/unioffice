@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package formatutils ;import (_ba "fmt";_f "github.com/unidoc/unioffice/v2/schema/soo/wml";_e "strconv";_d "strings";);func StringToNumbers (str string )(int ,bool ){_gcg :=0;_cb :=false ;for _ ,_ecg :=range []byte (str ){_ecg -='0';if _ecg > 9{continue ;
+package formatutils ;import (_ba "fmt";_f "github.com/yaklabco/unioffice/v2/schema/soo/wml";_e "strconv";_d "strings";);func StringToNumbers (str string )(int ,bool ){_gcg :=0;_cb :=false ;for _ ,_ecg :=range []byte (str ){_ecg -='0';if _ecg > 9{continue ;
 };_gcg =_gcg *10+int (_ecg );_cb =true ;};return _gcg ,_cb ;};func _a (_gb string )(_gd []string ){for _da :=0;_da < len (_gb )-2;_da ++{if string (_gb [_da ])=="\u0025"{if !_d .Contains (string (_gb [_da +2:]),"\u0025"){if _da ==0{_gd =append (_gd ,_ba .Sprintf ("\u0025\u0073\u0025\u0073\u0025\u0073",string (_gb [_da ]),string (_gb [_da +1]),string (_gb [_da +2:])));
 }else {_gd =append (_gd ,_ba .Sprintf ("\u0025\u0073\u0025\u0073\u0025\u0073\u0025\u0073",string (_gb [_da -1]),string (_gb [_da ]),string (_gb [_da +1]),string (_gb [_da +2:])));};}else {_gd =append (_gd ,_ba .Sprintf ("\u0025\u0073\u0025\u0073\u0025\u0073",string (_gb [_da ]),string (_gb [_da +1]),string (_gb [_da +2])));
 };};};return ;};var (_ag =[]string {"","\u0049","\u0049\u0049","\u0049\u0049\u0049","\u0049\u0056","\u0056","\u0056\u0049","\u0056\u0049\u0049","\u0056\u0049\u0049\u0049","\u0049\u0058"};_ad =[]string {"","\u0058","\u0058\u0058","\u0058\u0058\u0058","\u0058\u004c","\u004c","\u004c\u0058","\u004c\u0058\u0058","\u004c\u0058\u0058\u0058","\u0058\u0043"};

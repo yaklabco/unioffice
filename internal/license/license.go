@@ -10,7 +10,7 @@
 // terms that can be accessed at https://unidoc.io/eula/
 
 package license ;import (_abe "bytes";_g "compress/gzip";_f "crypto";_bd "crypto/aes";_ba "crypto/cipher";_afb "crypto/hmac";_ee "crypto/rand";_geg "crypto/rsa";_cc "crypto/sha256";_da "crypto/sha512";_ef "crypto/x509";_gd "encoding/base64";_ge "encoding/binary";
-_ea "encoding/hex";_ag "encoding/json";_df "encoding/pem";_fb "errors";_fe "fmt";_bf "github.com/unidoc/unioffice/v2/common";_ff "github.com/unidoc/unioffice/v2/common/logger";_bg "io";_ga "io/ioutil";_ad "log";_ab "net";_e "net/http";_c "os";_af "path/filepath";
+_ea "encoding/hex";_ag "encoding/json";_df "encoding/pem";_fb "errors";_fe "fmt";_bf "github.com/yaklabco/unioffice/v2/common";_ff "github.com/yaklabco/unioffice/v2/common/logger";_bg "io";_ga "io/ioutil";_ad "log";_ab "net";_e "net/http";_c "os";_af "path/filepath";
 _d "sort";_gb "strings";_a "sync";_cd "time";);var _acg map[string ]int ;type meteredStatusResp struct{Valid bool `json:"valid"`;OrgCredits int64 `json:"org_credits"`;OrgUsed int64 `json:"org_used"`;OrgRemaining int64 `json:"org_remaining"`;};func _bcf ()string {_baaa :=_c .Getenv ("\u0048\u004f\u004d\u0045");
 if len (_baaa )==0{_baaa ,_ =_c .UserHomeDir ();};return _baaa ;};const (_gea ="\u002d\u002d\u002d--\u0042\u0045\u0047\u0049\u004e\u0020\u0055\u004e\u0049D\u004fC\u0020L\u0049C\u0045\u004e\u0053\u0045\u0020\u004b\u0045\u0059\u002d\u002d\u002d\u002d\u002d";
 _fa ="\u002d\u002d\u002d\u002d\u002d\u0045\u004e\u0044\u0020\u0055\u004e\u0049\u0044\u004f\u0043 \u004cI\u0043\u0045\u004e\u0053\u0045\u0020\u004b\u0045\u0059\u002d\u002d\u002d\u002d\u002d";);func SetMeteredKeyPersistentCache (val bool ){_ece ._ce =val };

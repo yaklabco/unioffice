@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package symex ;import (_d "encoding/xml";_aa "fmt";_c "github.com/unidoc/unioffice/v2";);
+package symex ;import (_d "encoding/xml";_aa "fmt";_c "github.com/yaklabco/unioffice/v2";);
 
 // ValidateWithPath validates the CT_SymEx and its children, prefixing error messages with path
 func (_e *CT_SymEx )ValidateWithPath (path string )error {return nil };func NewCT_SymEx ()*CT_SymEx {_ae :=&CT_SymEx {};return _ae };

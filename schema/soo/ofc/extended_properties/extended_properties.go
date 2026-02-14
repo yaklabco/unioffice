@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package extended_properties ;import (_b "encoding/xml";_d "github.com/unidoc/unioffice/v2";_g "github.com/unidoc/unioffice/v2/common/logger";_a "github.com/unidoc/unioffice/v2/schema/soo/ofc/docPropsVTypes";);
+package extended_properties ;import (_b "encoding/xml";_d "github.com/yaklabco/unioffice/v2";_g "github.com/yaklabco/unioffice/v2/common/logger";_a "github.com/yaklabco/unioffice/v2/schema/soo/ofc/docPropsVTypes";);
 
 // Validate validates the CT_Properties and its children
 func (_bgb *CT_Properties )Validate ()error {return _bgb .ValidateWithPath ("\u0043\u0054\u005f\u0050\u0072\u006f\u0070\u0065\u0072\u0074\u0069\u0065\u0073");};type CT_VectorLpstr struct{Vector *_a .Vector ;};func NewProperties ()*Properties {_bgc :=&Properties {};

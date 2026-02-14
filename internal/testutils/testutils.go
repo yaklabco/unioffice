@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package testutils ;import (_g "archive/zip";_aa "bufio";_fadg "bytes";_fdc "crypto/md5";_cf "encoding/hex";_ed "encoding/json";_gb "encoding/xml";_a "errors";_dd "flag";_be "fmt";_da "github.com/stretchr/testify/require";_db "github.com/unidoc/unioffice/v2";
+package testutils ;import (_g "archive/zip";_aa "bufio";_fadg "bytes";_fdc "crypto/md5";_cf "encoding/hex";_ed "encoding/json";_gb "encoding/xml";_a "errors";_dd "flag";_be "fmt";_da "github.com/stretchr/testify/require";_db "github.com/yaklabco/unioffice/v2";
 _edg "github.com/unidoc/unipdf/v4/common";_fe "golang.org/x/image/font";_ab "golang.org/x/image/font/opentype";_fda "golang.org/x/image/math/fixed";_ce "image";_d "image/color";_c "image/draw";_fad "image/png";_faa "io";_fd "io/ioutil";_cc "log";_fa "math";
 _ac "os";_ec "os/exec";_df "path/filepath";_e "strings";_b "sync";_gc "testing";_fadc "time";);func (_aef *ReferenceFile )Update (currentMap *ReferenceMap )error {if _aef ._bee ==""{return nil ;};_fdaf :=_aef .updateMap (currentMap );if _fdaf ==0{return nil ;
 };_afd ,_dbgb :=_ac .OpenFile (_aef ._bee ,_ac .O_CREATE |_ac .O_TRUNC |_ac .O_WRONLY ,0664);if _dbgb !=nil {return _dbgb ;};defer _afd .Close ();_aef .Timestamp =_fadc .Now ().UTC ();_afg :=_ed .NewEncoder (_afd );_afg .SetIndent ("","\u0009");return _afg .Encode (_aef );

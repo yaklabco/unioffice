@@ -9,8 +9,8 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package vmldrawing ;import (_fg "encoding/xml";_d "fmt";_fb "github.com/unidoc/unioffice/v2";_c "github.com/unidoc/unioffice/v2/common/logger";_e "github.com/unidoc/unioffice/v2/schema/soo/ofc/sharedTypes";_a "github.com/unidoc/unioffice/v2/schema/urn/schemas_microsoft_com/office/excel";
-_da "github.com/unidoc/unioffice/v2/schema/urn/schemas_microsoft_com/vml";_f "strconv";_bg "strings";);
+package vmldrawing ;import (_fg "encoding/xml";_d "fmt";_fb "github.com/yaklabco/unioffice/v2";_c "github.com/yaklabco/unioffice/v2/common/logger";_e "github.com/yaklabco/unioffice/v2/schema/soo/ofc/sharedTypes";_a "github.com/yaklabco/unioffice/v2/schema/urn/schemas_microsoft_com/office/excel";
+_da "github.com/yaklabco/unioffice/v2/schema/urn/schemas_microsoft_com/vml";_f "strconv";_bg "strings";);
 
 // Top get top attribute of shape style.
 func (_dfe *ShapeStyle )Top ()float64 {return _dfe ._df };

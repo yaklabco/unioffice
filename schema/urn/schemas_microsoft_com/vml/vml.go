@@ -9,8 +9,8 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package vml ;import (_e "encoding/xml";_cf "fmt";_fc "github.com/unidoc/unioffice/v2";_cd "github.com/unidoc/unioffice/v2/common/logger";_b "github.com/unidoc/unioffice/v2/schema/soo/ofc/sharedTypes";_f "github.com/unidoc/unioffice/v2/schema/soo/wml";_bd "github.com/unidoc/unioffice/v2/schema/urn/schemas_microsoft_com/office/excel";
-_ec "github.com/unidoc/unioffice/v2/schema/urn/schemas_microsoft_com/office/powerpoint";_ce "github.com/unidoc/unioffice/v2/schema/urn/schemas_microsoft_com/office/word";_d "strconv";);func NewCT_GroupChoice ()*CT_GroupChoice {_ffdda :=&CT_GroupChoice {};
+package vml ;import (_e "encoding/xml";_cf "fmt";_fc "github.com/yaklabco/unioffice/v2";_cd "github.com/yaklabco/unioffice/v2/common/logger";_b "github.com/yaklabco/unioffice/v2/schema/soo/ofc/sharedTypes";_f "github.com/yaklabco/unioffice/v2/schema/soo/wml";_bd "github.com/yaklabco/unioffice/v2/schema/urn/schemas_microsoft_com/office/excel";
+_ec "github.com/yaklabco/unioffice/v2/schema/urn/schemas_microsoft_com/office/powerpoint";_ce "github.com/yaklabco/unioffice/v2/schema/urn/schemas_microsoft_com/office/word";_d "strconv";);func NewCT_GroupChoice ()*CT_GroupChoice {_ffdda :=&CT_GroupChoice {};
 _ffdda .ShapeElementsChoice =NewEG_ShapeElementsChoice ();return _ffdda ;};func (_eeag *CT_Stroke )MarshalXML (e *_e .Encoder ,start _e .StartElement )error {if (start .Name ==_e .Name {}){start .Name .Local ="\u0076\u003a\u0073\u0074\u0072\u006f\u006b\u0065";
 };if _eeag .IdAttr !=nil {start .Attr =append (start .Attr ,_e .Attr {Name :_e .Name {Local :"\u0069\u0064"},Value :_cf .Sprintf ("\u0025\u0076",*_eeag .IdAttr )});};if _eeag .OnAttr !=_b .ST_TrueFalseUnset {_fddcd ,_ddgd :=_eeag .OnAttr .MarshalXMLAttr (_e .Name {Local :"\u006f\u006e"});
 if _ddgd !=nil {return _ddgd ;};start .Attr =append (start .Attr ,_fddcd );};if _eeag .WeightAttr !=nil {start .Attr =append (start .Attr ,_e .Attr {Name :_e .Name {Local :"\u0077\u0065\u0069\u0067\u0068\u0074"},Value :_cf .Sprintf ("\u0025\u0076",*_eeag .WeightAttr )});

@@ -25,10 +25,10 @@ spreadsheet.Workbook and presentation.Presentation), the other wrapper types are
 value types with non-pointer methods.  They exist solely to modify and return
 data from one or more XML types.
 
-The packages of interest are github.com/unidoc/unioffice/v2/document,
-unidoc/unioffice/v2/spreadsheet and github.com/unidoc/unioffice/v2/presentation.
+The packages of interest are github.com/yaklabco/unioffice/v2/document,
+unidoc/unioffice/v2/spreadsheet and github.com/yaklabco/unioffice/v2/presentation.
 */
-package unioffice ;import (_f "encoding/xml";_d "errors";_fd "fmt";_ee "github.com/unidoc/unioffice/v2/algo";_dc "github.com/unidoc/unioffice/v2/common/logger";_fg "log";_ca "reflect";_c "strings";_e "unicode";);
+package unioffice ;import (_f "encoding/xml";_d "errors";_fd "fmt";_ee "github.com/yaklabco/unioffice/v2/algo";_dc "github.com/yaklabco/unioffice/v2/common/logger";_fg "log";_ca "reflect";_c "strings";_e "unicode";);
 
 // RegisterConstructor registers a constructor function used for unmarshaling
 // xsd:any elements.

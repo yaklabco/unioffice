@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package powerpoint ;import (_g "encoding/xml";_gc "fmt";_c "github.com/unidoc/unioffice/v2";);func (_df *Textdata )UnmarshalXML (d *_g .Decoder ,start _g .StartElement )error {_df .CT_Rel =*NewCT_Rel ();for _ ,_ea :=range start .Attr {if _ea .Name .Local =="\u0069\u0064"{_ga :=_ea .Value ;
+package powerpoint ;import (_g "encoding/xml";_gc "fmt";_c "github.com/yaklabco/unioffice/v2";);func (_df *Textdata )UnmarshalXML (d *_g .Decoder ,start _g .StartElement )error {_df .CT_Rel =*NewCT_Rel ();for _ ,_ea :=range start .Attr {if _ea .Name .Local =="\u0069\u0064"{_ga :=_ea .Value ;
 _df .IdAttr =&_ga ;continue ;};};for {_gff ,_cc :=d .Token ();if _cc !=nil {return _gc .Errorf ("p\u0061r\u0073\u0069\u006e\u0067\u0020\u0054\u0065\u0078t\u0064\u0061\u0074\u0061: \u0025\u0073",_cc );};if _cf ,_gcd :=_gff .(_g .EndElement );_gcd &&_cf .Name ==start .Name {break ;
 };};return nil ;};func NewCT_Empty ()*CT_Empty {_a :=&CT_Empty {};return _a };
 

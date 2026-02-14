@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package cex ;import (_a "encoding/xml";_bb "fmt";_cb "github.com/unidoc/unioffice/v2";_e "github.com/unidoc/unioffice/v2/common/logger";_ed "github.com/unidoc/unioffice/v2/schema/schemas.microsoft.com/office/word/2018/wordml";_edb "github.com/unidoc/unioffice/v2/schema/soo/ofc/sharedTypes";
+package cex ;import (_a "encoding/xml";_bb "fmt";_cb "github.com/yaklabco/unioffice/v2";_e "github.com/yaklabco/unioffice/v2/common/logger";_ed "github.com/yaklabco/unioffice/v2/schema/schemas.microsoft.com/office/word/2018/wordml";_edb "github.com/yaklabco/unioffice/v2/schema/soo/ofc/sharedTypes";
 _c "time";);
 
 // ValidateWithPath validates the CT_CommentsExtensible and its children, prefixing error messages with path

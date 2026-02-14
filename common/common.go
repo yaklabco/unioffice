@@ -13,10 +13,10 @@
 // OOXML document formats.
 //
 // Package common contains common properties used by the subpackages.
-package common ;import (_ad "archive/zip";_a "bytes";_ac "encoding/xml";_b "errors";_af "fmt";_ed "github.com/unidoc/unioffice/v2";_ef "github.com/unidoc/unioffice/v2/common/logger";_bf "github.com/unidoc/unioffice/v2/common/tempstorage";_gb "github.com/unidoc/unioffice/v2/common/tempstorage/diskstore";
-_de "github.com/unidoc/unioffice/v2/internal/sort";_ag "github.com/unidoc/unioffice/v2/measurement";_gd "github.com/unidoc/unioffice/v2/schema/soo/dml";_bbd "github.com/unidoc/unioffice/v2/schema/soo/ofc/custom_properties";_db "github.com/unidoc/unioffice/v2/schema/soo/ofc/docPropsVTypes";
-_ded "github.com/unidoc/unioffice/v2/schema/soo/ofc/extended_properties";_gdg "github.com/unidoc/unioffice/v2/schema/soo/pkg/content_types";_df "github.com/unidoc/unioffice/v2/schema/soo/pkg/metadata/core_properties";_ca "github.com/unidoc/unioffice/v2/schema/soo/pkg/relationships";
-_dd "github.com/unidoc/unioffice/v2/zippkg";_cf "image";_ "image/gif";_ "image/jpeg";_ "image/png";_f "os";_d "reflect";_bb "regexp";_fe "strconv";_fb "strings";_ce "time";);
+package common ;import (_ad "archive/zip";_a "bytes";_ac "encoding/xml";_b "errors";_af "fmt";_ed "github.com/yaklabco/unioffice/v2";_ef "github.com/yaklabco/unioffice/v2/common/logger";_bf "github.com/yaklabco/unioffice/v2/common/tempstorage";_gb "github.com/yaklabco/unioffice/v2/common/tempstorage/diskstore";
+_de "github.com/yaklabco/unioffice/v2/internal/sort";_ag "github.com/yaklabco/unioffice/v2/measurement";_gd "github.com/yaklabco/unioffice/v2/schema/soo/dml";_bbd "github.com/yaklabco/unioffice/v2/schema/soo/ofc/custom_properties";_db "github.com/yaklabco/unioffice/v2/schema/soo/ofc/docPropsVTypes";
+_ded "github.com/yaklabco/unioffice/v2/schema/soo/ofc/extended_properties";_gdg "github.com/yaklabco/unioffice/v2/schema/soo/pkg/content_types";_df "github.com/yaklabco/unioffice/v2/schema/soo/pkg/metadata/core_properties";_ca "github.com/yaklabco/unioffice/v2/schema/soo/pkg/relationships";
+_dd "github.com/yaklabco/unioffice/v2/zippkg";_cf "image";_ "image/gif";_ "image/jpeg";_ "image/png";_f "os";_d "reflect";_bb "regexp";_fe "strconv";_fb "strings";_ce "time";);
 
 // X returns the inner wrapped XML type of CustomProperty.
 func (_cfe CustomProperty )X ()*_bbd .CT_Property {return _cfe ._fbc };func _cg (_dbd ,_dbde *_ded .Properties )[]*_db .CT_VectorChoice {if _dbd .TitlesOfParts ==nil &&_dbde .TitlesOfParts !=nil {_dbd .TitlesOfParts =_ded .NewCT_VectorLpstr ();};var _gfd []*_db .CT_VectorChoice ;

@@ -11,7 +11,7 @@
 
 // Package memstore implements tempStorage interface
 // by using memory as a storage
-package memstore ;import (_c "encoding/hex";_b "errors";_eg "fmt";_gd "github.com/unidoc/unioffice/v2/common/tempstorage";_d "io";_g "io/ioutil";_eb "math/rand";_de "sync";);
+package memstore ;import (_c "encoding/hex";_b "errors";_eg "fmt";_gd "github.com/yaklabco/unioffice/v2/common/tempstorage";_d "io";_g "io/ioutil";_eb "math/rand";_de "sync";);
 
 // Read reads from the underlying memDataCell in order to implement Reader interface
 func (_gda *memFile )Read (p []byte )(int ,error ){_gg :=_gda ._ag ;_cg :=_gda ._a ._bg ;_f :=int64 (len (p ));if _f > _cg {_f =_cg ;p =p [:_f ];};if _gg >=_cg {return 0,_d .EOF ;};_fe :=_gg +_f ;if _fe >=_cg {_fe =_cg ;};_ff :=copy (p ,_gda ._a ._agf [_gg :_fe ]);

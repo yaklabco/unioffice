@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package custom_properties ;import (_f "encoding/xml";_a "fmt";_gd "github.com/unidoc/unioffice/v2";_d "github.com/unidoc/unioffice/v2/common/logger";_b "github.com/unidoc/unioffice/v2/schema/soo/ofc/docPropsVTypes";_c "github.com/unidoc/unioffice/v2/schema/soo/ofc/sharedTypes";
+package custom_properties ;import (_f "encoding/xml";_a "fmt";_gd "github.com/yaklabco/unioffice/v2";_d "github.com/yaklabco/unioffice/v2/common/logger";_b "github.com/yaklabco/unioffice/v2/schema/soo/ofc/docPropsVTypes";_c "github.com/yaklabco/unioffice/v2/schema/soo/ofc/sharedTypes";
 _fb "strconv";_fa "time";);func (_gbd *CT_PropertyChoice )MarshalXML (e *_f .Encoder ,start _f .StartElement )error {e .EncodeToken (start );if _gbd .Vector !=nil {_ded :=_f .StartElement {Name :_f .Name {Local :"\u0076t\u003a\u0076\u0065\u0063\u0074\u006fr"}};
 e .EncodeElement (_gbd .Vector ,_ded );}else if _gbd .Array !=nil {_ace :=_f .StartElement {Name :_f .Name {Local :"\u0076\u0074\u003a\u0061\u0072\u0072\u0061\u0079"}};e .EncodeElement (_gbd .Array ,_ace );}else if _gbd .Blob !=nil {_eda :=_f .StartElement {Name :_f .Name {Local :"\u0076t\u003a\u0062\u006c\u006f\u0062"}};
 _gd .AddPreserveSpaceAttr (&_eda ,*_gbd .Blob );e .EncodeElement (_gbd .Blob ,_eda );}else if _gbd .Oblob !=nil {_gbg :=_f .StartElement {Name :_f .Name {Local :"\u0076\u0074\u003a\u006f\u0062\u006c\u006f\u0062"}};_gd .AddPreserveSpaceAttr (&_gbg ,*_gbd .Oblob );

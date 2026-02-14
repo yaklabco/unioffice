@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package axcontrol ;import (_e "bytes";_a "encoding/binary";_eca "errors";_ec "fmt";_ea "github.com/unidoc/unioffice/v2/common/tempstorage";_ac "github.com/unidoc/unioffice/v2/internal/mscfb";_cc "github.com/unidoc/unioffice/v2/internal/mscfb/rw";_b "github.com/unidoc/unioffice/v2/schema/schemas.microsoft.com/office/activeX";
+package axcontrol ;import (_e "bytes";_a "encoding/binary";_eca "errors";_ec "fmt";_ea "github.com/yaklabco/unioffice/v2/common/tempstorage";_ac "github.com/yaklabco/unioffice/v2/internal/mscfb";_cc "github.com/yaklabco/unioffice/v2/internal/mscfb/rw";_b "github.com/yaklabco/unioffice/v2/schema/schemas.microsoft.com/office/activeX";
 _cd "io";);func (_ecge *CommandButtonControl )writePropMask (_ag *_cc .Writer )error {_fe :=uint32 (0);_fe =_cc .PushLeftUI32 (_fe ,_ecge ._fde ._ddc );_fe =_cc .PushLeftUI32 (_fe ,_ecge ._fde ._cba );_fe =_cc .PushLeftUI32 (_fe ,_ecge ._fde ._baa );_fe =_cc .PushLeftUI32 (_fe ,_ecge ._fde ._ede );
 _fe =_cc .PushLeftUI32 (_fe ,_ecge ._fde ._dbd );_fe =_cc .PushLeftUI32 (_fe ,_ecge ._fde ._cgf );_fe =_cc .PushLeftUI32 (_fe ,_ecge ._fde ._gdd );_fe =_cc .PushLeftUI32 (_fe ,_ecge ._fde ._cbd );_fe =_cc .PushLeftUI32 (_fe ,_ecge ._fde ._dbb );_fe =_cc .PushLeftUI32 (_fe ,_ecge ._fde ._gae );
 _fe =_cc .PushLeftUI32 (_fe ,_ecge ._fde ._bbd );_fe >>=21;return _a .Write (_ag ,_a .LittleEndian ,_fe );};const _fggd =2;func (_fdef *ScrollBarControl )readExtraDataBlock (_ggbb *_cc .Reader )error {_fdef ._fagdc =&scrollBarExtraDataBlock {};if _fdef ._eacf ._cfabc {var _cgef uint64 ;

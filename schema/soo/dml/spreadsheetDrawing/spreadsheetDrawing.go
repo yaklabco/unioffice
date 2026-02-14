@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package spreadsheetDrawing ;import (_e "encoding/xml";_ef "fmt";_fa "github.com/unidoc/unioffice/v2";_fb "github.com/unidoc/unioffice/v2/common/logger";_ed "github.com/unidoc/unioffice/v2/schema/soo/dml";_f "strconv";);func NewCT_AbsoluteAnchor ()*CT_AbsoluteAnchor {_ac :=&CT_AbsoluteAnchor {};
+package spreadsheetDrawing ;import (_e "encoding/xml";_ef "fmt";_fa "github.com/yaklabco/unioffice/v2";_fb "github.com/yaklabco/unioffice/v2/common/logger";_ed "github.com/yaklabco/unioffice/v2/schema/soo/dml";_f "strconv";);func NewCT_AbsoluteAnchor ()*CT_AbsoluteAnchor {_ac :=&CT_AbsoluteAnchor {};
 _ac .Pos =_ed .NewCT_Point2D ();_ac .Ext =_ed .NewCT_PositiveSize2D ();_ac .ObjectChoicesChoice =NewEG_ObjectChoicesChoice ();_ac .ClientData =NewCT_AnchorClientData ();return _ac ;};func (_cea *ST_EditAs )UnmarshalXML (d *_e .Decoder ,start _e .StartElement )error {_bfag ,_eedf :=d .Token ();
 if _eedf !=nil {return _eedf ;};if _gadd ,_cfcb :=_bfag .(_e .EndElement );_cfcb &&_gadd .Name ==start .Name {*_cea =1;return nil ;};if _ccb ,_bddd :=_bfag .(_e .CharData );!_bddd {return _ef .Errorf ("\u0065\u0078\u0070\u0065\u0063\u0074\u0065\u0064\u0020\u0063\u0068a\u0072\u0020\u0064\u0061\u0074\u0061\u002c\u0020\u0067\u006ft\u0020\u0025\u0054",_bfag );
 }else {switch string (_ccb ){case "":*_cea =0;case "\u0074w\u006f\u0043\u0065\u006c\u006c":*_cea =1;case "\u006fn\u0065\u0043\u0065\u006c\u006c":*_cea =2;case "\u0061\u0062\u0073\u006f\u006c\u0075\u0074\u0065":*_cea =3;};};_bfag ,_eedf =d .Token ();if _eedf !=nil {return _eedf ;

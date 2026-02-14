@@ -9,10 +9,10 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package convert ;import (_ge "bytes";_bd "errors";_b "fmt";_fgb "github.com/unidoc/emf";_bdg "github.com/unidoc/unioffice/v2/color";_fge "github.com/unidoc/unioffice/v2/common/logger";_ef "github.com/unidoc/unioffice/v2/common/tempstorage";_dd "github.com/unidoc/unioffice/v2/document";
-_de "github.com/unidoc/unioffice/v2/document/internal/contentblocks";_gb "github.com/unidoc/unioffice/v2/internal/convertutils";_bg "github.com/unidoc/unioffice/v2/internal/formatutils";_ag "github.com/unidoc/unioffice/v2/measurement";_e "github.com/unidoc/unioffice/v2/schema/soo/dml";
-_cab "github.com/unidoc/unioffice/v2/schema/soo/dml/chart";_cc "github.com/unidoc/unioffice/v2/schema/soo/dml/picture";_bc "github.com/unidoc/unioffice/v2/schema/soo/ofc/sharedTypes";_dc "github.com/unidoc/unioffice/v2/schema/soo/pkg/relationships";_gee "github.com/unidoc/unioffice/v2/schema/soo/wml";
-_bf "github.com/unidoc/unioffice/v2/schema/urn/schemas_microsoft_com/vml";_af "github.com/unidoc/unioffice/v2/vmldrawing";_dg "github.com/unidoc/unipdf/v4/core";_ca "github.com/unidoc/unipdf/v4/creator";_cb "github.com/unidoc/unipdf/v4/model";_c "github.com/unidoc/unipdf/v4/textshaping";
+package convert ;import (_ge "bytes";_bd "errors";_b "fmt";_fgb "github.com/unidoc/emf";_bdg "github.com/yaklabco/unioffice/v2/color";_fge "github.com/yaklabco/unioffice/v2/common/logger";_ef "github.com/yaklabco/unioffice/v2/common/tempstorage";_dd "github.com/yaklabco/unioffice/v2/document";
+_de "github.com/yaklabco/unioffice/v2/document/internal/contentblocks";_gb "github.com/yaklabco/unioffice/v2/internal/convertutils";_bg "github.com/yaklabco/unioffice/v2/internal/formatutils";_ag "github.com/yaklabco/unioffice/v2/measurement";_e "github.com/yaklabco/unioffice/v2/schema/soo/dml";
+_cab "github.com/yaklabco/unioffice/v2/schema/soo/dml/chart";_cc "github.com/yaklabco/unioffice/v2/schema/soo/dml/picture";_bc "github.com/yaklabco/unioffice/v2/schema/soo/ofc/sharedTypes";_dc "github.com/yaklabco/unioffice/v2/schema/soo/pkg/relationships";_gee "github.com/yaklabco/unioffice/v2/schema/soo/wml";
+_bf "github.com/yaklabco/unioffice/v2/schema/urn/schemas_microsoft_com/vml";_af "github.com/yaklabco/unioffice/v2/vmldrawing";_dg "github.com/unidoc/unipdf/v4/core";_ca "github.com/unidoc/unipdf/v4/creator";_cb "github.com/unidoc/unipdf/v4/model";_c "github.com/unidoc/unipdf/v4/textshaping";
 _f "image/png";_a "io";_d "regexp";_fg "strconv";_ba "strings";);
 
 // RegisterFontsFromDirectory registers all fonts from the given directory automatically detecting font families and styles. For composite fonts use RegisterCompositeFontsFromDirectory.

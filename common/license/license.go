@@ -11,7 +11,7 @@
 
 // Package license helps manage commercial licenses and check if they
 // are valid for the version of UniOffice used.
-package license ;import _g "github.com/unidoc/unioffice/v2/internal/license";
+package license ;import _g "github.com/yaklabco/unioffice/v2/internal/license";
 
 // SetMeteredKeyUsageLogVerboseMode sets the metered License API Key usage log verbose mode.
 // Default value `false`, set to `true` will log the credit usages and print out to console with log level INFO.

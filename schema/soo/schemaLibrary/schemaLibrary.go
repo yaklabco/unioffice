@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package schemaLibrary ;import (_g "encoding/xml";_c "fmt";_f "github.com/unidoc/unioffice/v2";_e "github.com/unidoc/unioffice/v2/common/logger";);
+package schemaLibrary ;import (_g "encoding/xml";_c "fmt";_f "github.com/yaklabco/unioffice/v2";_e "github.com/yaklabco/unioffice/v2/common/logger";);
 
 // ValidateWithPath validates the CT_Schema and its children, prefixing error messages with path
 func (_df *CT_Schema )ValidateWithPath (path string )error {return nil };func (_b *CT_Schema )MarshalXML (e *_g .Encoder ,start _g .StartElement )error {if _b .UriAttr !=nil {start .Attr =append (start .Attr ,_g .Attr {Name :_g .Name {Local :"\u006d\u0061\u003a\u0075\u0072\u0069"},Value :_c .Sprintf ("\u0025\u0076",*_b .UriAttr )});

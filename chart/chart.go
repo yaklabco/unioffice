@@ -9,8 +9,8 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package chart ;import (_ba "fmt";_c "github.com/unidoc/unioffice/v2";_a "github.com/unidoc/unioffice/v2/color";_ff "github.com/unidoc/unioffice/v2/drawing";_f "github.com/unidoc/unioffice/v2/measurement";_af "github.com/unidoc/unioffice/v2/schema/soo/dml";
-_e "github.com/unidoc/unioffice/v2/schema/soo/dml/chart";_g "math/rand";);
+package chart ;import (_ba "fmt";_c "github.com/yaklabco/unioffice/v2";_a "github.com/yaklabco/unioffice/v2/color";_ff "github.com/yaklabco/unioffice/v2/drawing";_f "github.com/yaklabco/unioffice/v2/measurement";_af "github.com/yaklabco/unioffice/v2/schema/soo/dml";
+_e "github.com/yaklabco/unioffice/v2/schema/soo/dml/chart";_g "math/rand";);
 
 // X returns the inner wrapped XML type.
 func (_bgc Chart )X ()*_e .ChartSpace {return _bgc ._egg };

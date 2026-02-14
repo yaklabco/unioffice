@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package reference ;import (_a "errors";_e "fmt";_cf "github.com/unidoc/unioffice/v2/spreadsheet/update";_d "regexp";_de "strconv";_c "strings";);
+package reference ;import (_a "errors";_e "fmt";_cf "github.com/yaklabco/unioffice/v2/spreadsheet/update";_d "regexp";_de "strconv";_c "strings";);
 
 // ParseColumnRangeReference splits a range reference of the form "A:B" into its
 // components.

@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package word ;import (_d "encoding/xml";_e "fmt";_cc "github.com/unidoc/unioffice/v2";_c "strconv";);func (_bdg *Wrap )UnmarshalXML (d *_d .Decoder ,start _d .StartElement )error {_bdg .CT_Wrap =*NewCT_Wrap ();for _ ,_fbef :=range start .Attr {if _fbef .Name .Local =="\u0074\u0079\u0070\u0065"{_bdg .TypeAttr .UnmarshalXMLAttr (_fbef );
+package word ;import (_d "encoding/xml";_e "fmt";_cc "github.com/yaklabco/unioffice/v2";_c "strconv";);func (_bdg *Wrap )UnmarshalXML (d *_d .Decoder ,start _d .StartElement )error {_bdg .CT_Wrap =*NewCT_Wrap ();for _ ,_fbef :=range start .Attr {if _fbef .Name .Local =="\u0074\u0079\u0070\u0065"{_bdg .TypeAttr .UnmarshalXMLAttr (_fbef );
 continue ;};if _fbef .Name .Local =="\u0073\u0069\u0064\u0065"{_bdg .SideAttr .UnmarshalXMLAttr (_fbef );continue ;};if _fbef .Name .Local =="\u0061n\u0063\u0068\u006f\u0072\u0078"{_bdg .AnchorxAttr .UnmarshalXMLAttr (_fbef );continue ;};if _fbef .Name .Local =="\u0061n\u0063\u0068\u006f\u0072\u0079"{_bdg .AnchoryAttr .UnmarshalXMLAttr (_fbef );
 continue ;};};for {_fcd ,_abg :=d .Token ();if _abg !=nil {return _e .Errorf ("\u0070\u0061r\u0073\u0069\u006eg\u0020\u0057\u0072\u0061\u0070\u003a\u0020\u0025\u0073",_abg );};if _egfd ,_def :=_fcd .(_d .EndElement );_def &&_egfd .Name ==start .Name {break ;
 };};return nil ;};

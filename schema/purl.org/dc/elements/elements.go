@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package elements ;import (_f "encoding/xml";_bf "fmt";_ee "github.com/unidoc/unioffice/v2";_e "github.com/unidoc/unioffice/v2/common/logger";);
+package elements ;import (_f "encoding/xml";_bf "fmt";_ee "github.com/yaklabco/unioffice/v2";_e "github.com/yaklabco/unioffice/v2/common/logger";);
 
 // ValidateWithPath validates the ElementsGroup and its children, prefixing error messages with path
 func (_de *ElementsGroup )ValidateWithPath (path string )error {if _de .Any !=nil {if _ad :=_de .Any .ValidateWithPath (path +"\u002f\u0041\u006e\u0079");_ad !=nil {return _ad ;};};return nil ;};func (_ebg *SimpleLiteral )UnmarshalXML (d *_f .Decoder ,start _f .StartElement )error {for {_cgg ,_fda :=d .Token ();

@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package mscfb ;import (_f "bytes";_fe "encoding/binary";_e "fmt";_d "github.com/richardlehane/msoleps/types";_gc "github.com/unidoc/unioffice/v2/internal/mscfb/rw";_g "io";_fga "os";_ff "strconv";_fg "time";_bc "unicode";_c "unicode/utf16";);func (_dff *Reader )Next ()(*File ,error ){_dff ._efa ++;
+package mscfb ;import (_f "bytes";_fe "encoding/binary";_e "fmt";_d "github.com/richardlehane/msoleps/types";_gc "github.com/yaklabco/unioffice/v2/internal/mscfb/rw";_g "io";_fga "os";_ff "strconv";_fg "time";_bc "unicode";_c "unicode/utf16";);func (_dff *Reader )Next ()(*File ,error ){_dff ._efa ++;
 if _dff ._efa >=len (_dff .File ){return nil ,_g .EOF ;};return _dff .File [_dff ._efa ],nil ;};func (_eeg *Reader )Created ()_fg .Time {return _eeg .File [0].Created ()};func (_egd *File )FileInfo ()_fga .FileInfo {return fileInfo {_egd }};func (_gaea *Reader )GetEntry (entryName string )(*File ,error ){for _gcbg ,_agca :=_gaea .Next ();
 _agca ==nil ;_gcbg ,_agca =_gaea .Next (){if _gcbg .Name ==entryName {return _gcbg ,nil ;};};return nil ,Error {ErrTraverse ,"\u004e\u006f\u0020\u0065\u006e\u0074\u0072\u0079\u0020\u0066o\u0075\u006e\u0064\u0020\u0066\u006f\u0072 \u0067\u0069\u0076\u0065\u006e\u0020\u006e\u0061\u006d\u0065\u002e",0};
 };func (_ga *Reader )setDirEntries ()error {_cfc :=20;if _ga ._agf ._bbb > 0{_cfc =int (_ga ._agf ._bbb );};_bea :=make ([]*File ,0,_cfc );_edb :=make (map[uint32 ]bool );_ffe :=int (_ga ._acbc /_bde );_dcd :=_ga ._agf ._babe ;for _dcd !=_agc {_dg ,_gdd :=_ga .readAt (_bafg (_ga ._acbc ,_dcd ),int (_ga ._acbc ));

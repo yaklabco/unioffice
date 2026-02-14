@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package drawing ;import (_af "github.com/unidoc/unioffice/v2";_d "github.com/unidoc/unioffice/v2/color";_db "github.com/unidoc/unioffice/v2/measurement";_g "github.com/unidoc/unioffice/v2/schema/soo/dml";);
+package drawing ;import (_af "github.com/yaklabco/unioffice/v2";_d "github.com/yaklabco/unioffice/v2/color";_db "github.com/yaklabco/unioffice/v2/measurement";_g "github.com/yaklabco/unioffice/v2/schema/soo/dml";);
 
 // SetSize sets the width and height of the shape.
 func (_bfg ShapeProperties )SetSize (w ,h _db .Distance ){_bfg .SetWidth (w );_bfg .SetHeight (h )};

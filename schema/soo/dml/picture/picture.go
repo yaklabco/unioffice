@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package picture ;import (_e "encoding/xml";_ff "github.com/unidoc/unioffice/v2";_f "github.com/unidoc/unioffice/v2/common/logger";_a "github.com/unidoc/unioffice/v2/schema/soo/dml";);func NewPic ()*Pic {_fdff :=&Pic {};_fdff .CT_Picture =*NewCT_Picture ();
+package picture ;import (_e "encoding/xml";_ff "github.com/yaklabco/unioffice/v2";_f "github.com/yaklabco/unioffice/v2/common/logger";_a "github.com/yaklabco/unioffice/v2/schema/soo/dml";);func NewPic ()*Pic {_fdff :=&Pic {};_fdff .CT_Picture =*NewCT_Picture ();
 return _fdff };type CT_PictureNonVisual struct{
 
 // Non-Visual Drawing Properties

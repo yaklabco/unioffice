@@ -11,7 +11,7 @@
 
 // Package color provides color handling structures and functions for use across
 // all of the document types.
-package color ;import (_g "fmt";_a "github.com/unidoc/unioffice/v2";_da "github.com/unidoc/unioffice/v2/schema/soo/wml";_f "github.com/unidoc/unipdf/v4/creator";);var DarkOrchid =Color {0x99,0x32,0xCC,255,false };var MediumSlateBlue =Color {0x7B,0x68,0xEE,255,false };
+package color ;import (_g "fmt";_a "github.com/yaklabco/unioffice/v2";_da "github.com/yaklabco/unioffice/v2/schema/soo/wml";_f "github.com/unidoc/unipdf/v4/creator";);var DarkOrchid =Color {0x99,0x32,0xCC,255,false };var MediumSlateBlue =Color {0x7B,0x68,0xEE,255,false };
 var LightCoral =Color {0xF0,0x80,0x80,255,false };
 
 // IsAuto returns true if the color is the 'Auto' type.  If the

@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package cid ;import (_gd "encoding/xml";_e "fmt";_bf "github.com/unidoc/unioffice/v2";_a "github.com/unidoc/unioffice/v2/common/logger";_b "strconv";);
+package cid ;import (_gd "encoding/xml";_e "fmt";_bf "github.com/yaklabco/unioffice/v2";_a "github.com/yaklabco/unioffice/v2/common/logger";_b "strconv";);
 
 // Validate validates the CT_CommentsIds and its children
 func (_ecfd *CT_CommentsIds )Validate ()error {return _ecfd .ValidateWithPath ("\u0043\u0054\u005f\u0043\u006f\u006d\u006d\u0065\u006et\u0073\u0049\u0064\u0073");};func NewCommentsIds ()*CommentsIds {_ga :=&CommentsIds {};_ga .CT_CommentsIds =*NewCT_CommentsIds ();

@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package math ;import (_a "encoding/xml";_g "fmt";_fc "github.com/unidoc/unioffice/v2";_b "github.com/unidoc/unioffice/v2/common/logger";_c "github.com/unidoc/unioffice/v2/schema/soo/ofc/sharedTypes";_d "strconv";);
+package math ;import (_a "encoding/xml";_g "fmt";_fc "github.com/yaklabco/unioffice/v2";_b "github.com/yaklabco/unioffice/v2/common/logger";_c "github.com/yaklabco/unioffice/v2/schema/soo/ofc/sharedTypes";_d "strconv";);
 
 // Validate validates the CT_Shp and its children
 func (_acbb *CT_Shp )Validate ()error {return _acbb .ValidateWithPath ("\u0043\u0054\u005f\u0053\u0068\u0070");};func (_fdffc *CT_OMathArg )UnmarshalXML (d *_a .Decoder ,start _a .StartElement )error {_edgg :for {_becef ,_dbgga :=d .Token ();if _dbgga !=nil {return _dbgga ;

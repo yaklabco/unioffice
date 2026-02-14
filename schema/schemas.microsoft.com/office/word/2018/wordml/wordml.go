@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package wordml ;import (_b "encoding/xml";_c "fmt";_ac "github.com/unidoc/unioffice/v2";_fb "github.com/unidoc/unioffice/v2/common/logger";_e "github.com/unidoc/unioffice/v2/schema/soo/dml";_cc "github.com/unidoc/unioffice/v2/schema/soo/ofc/sharedTypes";
+package wordml ;import (_b "encoding/xml";_c "fmt";_ac "github.com/yaklabco/unioffice/v2";_fb "github.com/yaklabco/unioffice/v2/common/logger";_e "github.com/yaklabco/unioffice/v2/schema/soo/dml";_cc "github.com/yaklabco/unioffice/v2/schema/soo/ofc/sharedTypes";
 _g "strings";_f "time";);func ParseUnionST_Coordinate (s string )(_e .ST_Coordinate ,error ){return _e .ParseUnionST_Coordinate (s );};
 
 // ValidateWithPath validates the CT_Extension and its children, prefixing error messages with path

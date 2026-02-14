@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package pml ;import (_f "encoding/xml";_ec "fmt";_g "github.com/unidoc/unioffice/v2";_bc "github.com/unidoc/unioffice/v2/common/logger";_bce "github.com/unidoc/unioffice/v2/schema/soo/dml";_c "github.com/unidoc/unioffice/v2/schema/soo/ofc/sharedTypes";
+package pml ;import (_f "encoding/xml";_ec "fmt";_g "github.com/yaklabco/unioffice/v2";_bc "github.com/yaklabco/unioffice/v2/common/logger";_bce "github.com/yaklabco/unioffice/v2/schema/soo/dml";_c "github.com/yaklabco/unioffice/v2/schema/soo/ofc/sharedTypes";
 _a "strconv";_e "time";);
 
 // Validate validates the CT_Control and its children

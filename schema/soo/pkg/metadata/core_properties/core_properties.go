@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package core_properties ;import (_a "encoding/xml";_f "fmt";_c "github.com/unidoc/unioffice/v2";_cg "github.com/unidoc/unioffice/v2/common/logger";_g "github.com/unidoc/unioffice/v2/schema/soo/ofc/sharedTypes";_ff "time";);
+package core_properties ;import (_a "encoding/xml";_f "fmt";_c "github.com/yaklabco/unioffice/v2";_cg "github.com/yaklabco/unioffice/v2/common/logger";_g "github.com/yaklabco/unioffice/v2/schema/soo/ofc/sharedTypes";_ff "time";);
 
 // ValidateWithPath validates the CoreProperties and its children, prefixing error messages with path
 func (_ddd *CoreProperties )ValidateWithPath (path string )error {if _ege :=_ddd .CT_CoreProperties .ValidateWithPath (path );_ege !=nil {return _ege ;};return nil ;};func (_gbd *CT_CoreProperties )UnmarshalXML (d *_a .Decoder ,start _a .StartElement )error {_e :for {_fb ,_fd :=d .Token ();

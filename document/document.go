@@ -21,16 +21,16 @@ Example:
 	run.SetText("foo")
 	doc.SaveToFile("foo.docx")
 */
-package document ;import (_e "archive/zip";_df "bytes";_ac "encoding/xml";_aa "errors";_cd "fmt";_c "github.com/unidoc/unioffice/v2";_f "github.com/unidoc/unioffice/v2/color";_da "github.com/unidoc/unioffice/v2/common";_fd "github.com/unidoc/unioffice/v2/common/axcontrol";
-_gbg "github.com/unidoc/unioffice/v2/common/logger";_af "github.com/unidoc/unioffice/v2/common/tempstorage";_fa "github.com/unidoc/unioffice/v2/document/internal/contentblocks";_ae "github.com/unidoc/unioffice/v2/internal/formatutils";_gae "github.com/unidoc/unioffice/v2/internal/license";
-_gbe "github.com/unidoc/unioffice/v2/measurement";_db "github.com/unidoc/unioffice/v2/schema/schemas.microsoft.com/office/activeX";_bc "github.com/unidoc/unioffice/v2/schema/schemas.microsoft.com/office/word/2012/wordml";_ca "github.com/unidoc/unioffice/v2/schema/schemas.microsoft.com/office/word/2016/wordml/cid";
-_ce "github.com/unidoc/unioffice/v2/schema/schemas.microsoft.com/office/word/2018/wordml/cex";_ab "github.com/unidoc/unioffice/v2/schema/soo/dml";_fe "github.com/unidoc/unioffice/v2/schema/soo/dml/chart";_aaf "github.com/unidoc/unioffice/v2/schema/soo/dml/picture";
-_acd "github.com/unidoc/unioffice/v2/schema/soo/ofc/sharedTypes";_gcd "github.com/unidoc/unioffice/v2/schema/soo/pkg/relationships";_cc "github.com/unidoc/unioffice/v2/schema/soo/wml";_bf "github.com/unidoc/unioffice/v2/schema/urn/schemas_microsoft_com/vml";
-_fb "github.com/unidoc/unioffice/v2/vmldrawing";_aaa "github.com/unidoc/unioffice/v2/zippkg";_dg "image";_geb "image/jpeg";_b "io";_cb "math/rand";_de "os";_ge "path/filepath";_d "regexp";_gc "slices";_g "strconv";_gb "strings";_cbg "time";_ga "unicode";
+package document ;import (_e "archive/zip";_df "bytes";_ac "encoding/xml";_aa "errors";_cd "fmt";_c "github.com/yaklabco/unioffice/v2";_f "github.com/yaklabco/unioffice/v2/color";_da "github.com/yaklabco/unioffice/v2/common";_fd "github.com/yaklabco/unioffice/v2/common/axcontrol";
+_gbg "github.com/yaklabco/unioffice/v2/common/logger";_af "github.com/yaklabco/unioffice/v2/common/tempstorage";_fa "github.com/yaklabco/unioffice/v2/document/internal/contentblocks";_ae "github.com/yaklabco/unioffice/v2/internal/formatutils";_gae "github.com/yaklabco/unioffice/v2/internal/license";
+_gbe "github.com/yaklabco/unioffice/v2/measurement";_db "github.com/yaklabco/unioffice/v2/schema/schemas.microsoft.com/office/activeX";_bc "github.com/yaklabco/unioffice/v2/schema/schemas.microsoft.com/office/word/2012/wordml";_ca "github.com/yaklabco/unioffice/v2/schema/schemas.microsoft.com/office/word/2016/wordml/cid";
+_ce "github.com/yaklabco/unioffice/v2/schema/schemas.microsoft.com/office/word/2018/wordml/cex";_ab "github.com/yaklabco/unioffice/v2/schema/soo/dml";_fe "github.com/yaklabco/unioffice/v2/schema/soo/dml/chart";_aaf "github.com/yaklabco/unioffice/v2/schema/soo/dml/picture";
+_acd "github.com/yaklabco/unioffice/v2/schema/soo/ofc/sharedTypes";_gcd "github.com/yaklabco/unioffice/v2/schema/soo/pkg/relationships";_cc "github.com/yaklabco/unioffice/v2/schema/soo/wml";_bf "github.com/yaklabco/unioffice/v2/schema/urn/schemas_microsoft_com/vml";
+_fb "github.com/yaklabco/unioffice/v2/vmldrawing";_aaa "github.com/yaklabco/unioffice/v2/zippkg";_dg "image";_geb "image/jpeg";_b "io";_cb "math/rand";_de "os";_ge "path/filepath";_d "regexp";_gc "slices";_g "strconv";_gb "strings";_cbg "time";_ga "unicode";
 );
 
 // GetEffect returns the effect of the run.
-func (_ddea RunProperties )GetEffect ()_cc .ST_TextEffect {if _ddea ._ccfdc .Effect ==nil {return _cc .ST_TextEffectUnset ;};return _ddea ._ccfdc .Effect .ValAttr ;};var _gebe =false ;
+func (_ddea RunProperties )GetEffect ()_cc .ST_TextEffect {if _ddea ._ccfdc .Effect ==nil {return _cc .ST_TextEffectUnset ;};return _ddea ._ccfdc .Effect .ValAttr ;};var _gebe =true ;
 
 // X returns the inner wrapped XML type.
 func (_dgd Color )X ()*_cc .CT_Color {return _dgd ._gcg };

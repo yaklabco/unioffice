@@ -82,14 +82,24 @@ func (a *AlternateContentSVGRun) MarshalXML(e *xml.Encoder, start xml.StartEleme
 	}
 
 	if a.Choice != nil {
-		// Use EncodeElement which writes the start tag, content, and end tag.
+		// Manually write mc:Choice start/end tokens because AC_ChoiceRun.MarshalXML
+		// ignores the start element parameter and writes children directly.
 		choiceStart := xml.StartElement{
 			Name: xml.Name{Local: "mc:Choice"},
 			Attr: []xml.Attr{
 				{Name: xml.Name{Local: "Requires"}, Value: "asvg"},
 			},
 		}
-		if err := e.EncodeElement(a.Choice, choiceStart); err != nil {
+		if err := e.EncodeToken(choiceStart); err != nil {
+			return err
+		}
+		if a.Choice.Drawing != nil {
+			drawingStart := xml.StartElement{Name: xml.Name{Local: "w:drawing"}}
+			if err := e.EncodeElement(a.Choice.Drawing, drawingStart); err != nil {
+				return err
+			}
+		}
+		if err := e.EncodeToken(xml.EndElement{Name: choiceStart.Name}); err != nil {
 			return err
 		}
 	}

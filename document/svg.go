@@ -124,8 +124,8 @@ func (r Run) AddDrawingInlineSVG(svgImg, pngImg common.ImageRef) (InlineDrawing,
 	choicePic.SpPr.Xfrm.Off.XAttr.ST_CoordinateUnqualified = unioffice.Int64(0)
 	choicePic.SpPr.Xfrm.Off.YAttr.ST_CoordinateUnqualified = unioffice.Int64(0)
 	choicePic.SpPr.Xfrm.Ext = dml.NewCT_PositiveSize2D()
-	choicePic.SpPr.Xfrm.Ext.CxAttr = int64(pngImg.Size().X * measurement.Point)
-	choicePic.SpPr.Xfrm.Ext.CyAttr = int64(pngImg.Size().Y * measurement.Point)
+	choicePic.SpPr.Xfrm.Ext.CxAttr = choiceInline.Extent.CxAttr
+	choicePic.SpPr.Xfrm.Ext.CyAttr = choiceInline.Extent.CyAttr
 	choicePic.SpPr.GeometryChoice.PrstGeom = dml.NewCT_PresetGeometry2D()
 	choicePic.SpPr.GeometryChoice.PrstGeom.PrstAttr = dml.ST_ShapeTypeRect
 

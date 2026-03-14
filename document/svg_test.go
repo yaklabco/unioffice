@@ -111,8 +111,11 @@ func TestAddDrawingInlineSVG_XMLStructure(t *testing.T) {
 		t.Error("expected mc:AlternateContent in XML")
 	}
 	// Must contain mc:Choice with Requires="asvg"
-	if !strings.Contains(xmlStr, "asvg") {
-		t.Error("expected asvg reference in XML")
+	if !strings.Contains(xmlStr, "mc:Choice") {
+		t.Error("expected mc:Choice element in XML")
+	}
+	if !strings.Contains(xmlStr, `Requires="asvg"`) {
+		t.Error("expected Requires=\"asvg\" attribute on mc:Choice")
 	}
 	// Must contain mc:Fallback
 	if !strings.Contains(xmlStr, "Fallback") {
@@ -377,6 +380,43 @@ func TestAddDrawingInlineSVG_MultipleSVGs(t *testing.T) {
 	}
 	if svgCount != 3 {
 		t.Errorf("expected 3 SVG files, got %d", svgCount)
+	}
+}
+
+// TestAddDrawingInlineSVG_ShapeExtentsMatchInline verifies that the picture
+// shape transform extents use the same EMU values as the inline extent,
+// not raw pixel values.
+func TestAddDrawingInlineSVG_ShapeExtentsMatchInline(t *testing.T) {
+	doc := New()
+	pngData := testPNGData(t, 400, 200)
+
+	pngImg, svgImg, err := doc.AddImageSVG(testSVGData, pngData, 400, 200)
+	if err != nil {
+		t.Fatalf("AddImageSVG: %v", err)
+	}
+
+	para := doc.AddParagraph()
+	run := para.AddRun()
+	_, err = run.AddDrawingInlineSVG(svgImg, pngImg)
+	if err != nil {
+		t.Fatalf("AddDrawingInlineSVG: %v", err)
+	}
+
+	// Marshal and check that shape extent cx values are NOT raw pixel values (400, 200)
+	// but rather EMU values (should be > 100000 for any reasonable image)
+	xmlData, err := xml.Marshal(run.X().Extra[0])
+	if err != nil {
+		t.Fatalf("xml.Marshal: %v", err)
+	}
+	xmlStr := string(xmlData)
+
+	// The shape extent should NOT contain cx="400" (raw pixels)
+	if strings.Contains(xmlStr, `cx="400"`) {
+		t.Error("shape extent cx should be EMU, not raw pixels (400)")
+	}
+	if strings.Contains(xmlStr, `cx="200"`) {
+		// 200 could be cy raw pixel value; the EMU value for 200px at 72 DPI = 2540000
+		t.Error("shape extent should be EMU, not raw pixels (200)")
 	}
 }
 
